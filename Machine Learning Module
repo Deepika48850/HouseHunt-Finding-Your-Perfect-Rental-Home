@@ -1,0 +1,27 @@
+🧠 Machine Learning Module
+Goal:
+Recommend top 5 similar properties based on user preferences.
+
+Model: K-Nearest Neighbors
+import pandas as pd
+from sklearn.preprocessing import StandardScaler
+from sklearn.neighbors import NearestNeighbors
+import joblib
+
+def get_recommendations(user_pref):
+    df = pd.read_csv('data/listings.csv')
+
+    features = df[['price', 'bedrooms', 'bathrooms']]
+    scaler = StandardScaler()
+    scaled = scaler.fit_transform(features)
+
+    knn = NearestNeighbors(n_neighbors=5)
+    knn.fit(scaled)
+
+    input_scaled = scaler.transform([user_pref])
+    distances, indices = knn.kneighbors(input_scaled)
+
+    return df.iloc[indices[0]]
+
+# Example use
+# print(get_recommendations([15000, 2, 1]))
