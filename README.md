@@ -1,0 +1,1 @@
+HouseHunt is a web-based application that helps users search, filter, and compare rental properties based on location, budget, number of rooms, amenities, and user preferences. It uses a combination of a clean UI, geolocation services, and optional machine learning for personalized recommendations.
