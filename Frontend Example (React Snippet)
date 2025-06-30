@@ -1,0 +1,14 @@
+🌐 Frontend Example (React Snippet)
+// frontend/components/PropertyCard.js
+export default function PropertyCard({ property }) {
+  return (
+    <div className="rounded-xl p-4 shadow-xl bg-white">
+      <img src={property.image_url} alt="Home" className="rounded-xl mb-2" />
+      <h2 className="text-xl font-bold">{property.title}</h2>
+      <p>{property.location} • ₹{property.price}/month</p>
+      <button className="bg-blue-500 text-white px-3 py-1 rounded-lg mt-2">
+        View Details
+      </button>
+    </div>
+  );
+}
