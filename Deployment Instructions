@@ -1,0 +1,16 @@
+📤 8. Deployment Instructions
+📍 Frontend (Vercel/Netlify):
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm run build
+# Deploy 'build/' folder
+🛠 Backend (Render/Heroku):
+bash
+Copy
+Edit
+cd backend
+pip install -r requirements.txt
+# Deploy app.py as the entry point
