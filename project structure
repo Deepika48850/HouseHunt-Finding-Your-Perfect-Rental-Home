@@ -1,0 +1,28 @@
+📁 Project Structure
+HouseHunt/
+│
+├── backend/
+│   ├── app.py               # Flask/Django app entry point
+│   ├── models.py            # Database models (SQLAlchemy / Django Models)
+│   ├── routes.py            # API routes
+│   ├── database.db          # SQLite or PostgreSQL (optional)
+│   └── utils.py             # Helper functions
+│
+├── frontend/
+│   ├── index.html           # Main HTML layout
+│   ├── style.css            # CSS styling
+│   ├── app.js               # JavaScript functionality
+│   └── components/
+│       └── PropertyCard.js  # Reusable components (React/Vue)
+│
+├── ml_model/
+│   ├── recommendation.py    # Rental recommendation engine
+│   ├── preprocess.py        # Data cleaning
+│   └── model.pkl            # Saved ML model
+│
+├── data/
+│   └── listings.csv         # Sample rental data
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
