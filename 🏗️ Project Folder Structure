@@ -1,0 +1,35 @@
+🏗️  Project Folder Structure
+HouseHunt/
+│
+├── frontend/
+│   ├── public/
+│   │   └── index.html
+│   ├── src/
+│   │   ├── App.js
+│   │   ├── components/
+│   │   │   └── PropertyCard.js
+│   │   ├── pages/
+│   │   │   └── Home.js, Login.js, Details.js
+│   │   └── api/
+│   │       └── listings.js
+│   └── tailwind.config.js
+│
+├── backend/
+│   ├── app.py
+│   ├── routes.py
+│   ├── models.py
+│   ├── recommender.py
+│   └── database.db
+│
+├── ml_model/
+│   ├── train_model.py
+│   ├── recommendation.py
+│   └── model.pkl
+│
+├── data/
+│   └── listings.csv
+│
+├── .env
+├── requirements.txt
+├── README.md
+└── .gitignore
