@@ -1,0 +1,22 @@
+🧠 Sample Machine Learning Code (Recommendation)
+python
+Copy
+Edit
+# ml_model/recommendation.py
+import pandas as pd
+from sklearn.neighbors import NearestNeighbors
+import pickle
+
+def recommend(location, budget, bedrooms):
+    data = pd.read_csv("data/listings.csv")
+    features = data[['location', 'price', 'bedrooms']]
+    features = pd.get_dummies(features)
+
+    model = NearestNeighbors(n_neighbors=5)
+    model.fit(features)
+
+    user_input = pd.DataFrame([[location, budget, bedrooms]], columns=['location', 'price', 'bedrooms'])
+    user_input = pd.get_dummies(user_input).reindex(columns=features.columns, fill_value=0)
+
+    distances, indices = model.kneighbors(user_input)
+    return data.iloc[indices[0]]
