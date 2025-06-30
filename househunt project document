@@ -3,3 +3,119 @@
 HouseHunt is a web-based application that helps users search, filter, 
 and compare rental properties based on location, budget, number of rooms, amenities, and user preferences. 
 It uses a combination of a clean UI, geolocation services, and optional machine learning for personalized recommendations.
+🧰 Tech Stack
+Frontend: HTML, CSS, JavaScript (optionally React or Vue.js)
+
+Backend: Flask or Django
+
+Database: SQLite / PostgreSQL
+
+ML (Optional): Scikit-learn / Pandas / NumPy
+
+Hosting: Render, Heroku, or Vercel (frontend)
+
+🔄 Core Features
+🔍 Search rental listings by city, price, type
+
+🧩 Filter by bedrooms, amenities, pet-friendly, etc.
+
+🗺️ Map integration (Google Maps API / Leaflet)
+
+❤️ Save favorite properties
+
+🧠 Personalized recommendations (ML model)
+
+👤 User login/registration (optional)
+📘 1. Project Objective
+To build a smart rental home discovery platform that allows users to find, filter, and receive
+personalized recommendations for rental properties based on their preferences (location, budget, rooms, amenities, etc.).
+
+🎯 2. Key Features
+Feature	Description
+🔍 Property Search	Search homes by location, rent, type
+🧩 Advanced Filters	Filter by price, number of rooms, pet-friendly, furnished, etc.
+📍 Map Integration	Visual display using Leaflet or Google Maps API
+❤️ Save Favorites	Add/remove properties to a wishlist
+🔐 User Authentication	Login/register to manage saved searches
+🤖 ML-Powered Recommendations	Suggest rentals based on user history and preferences
+📱 Responsive UI	Mobile-friendly layout
+📦 REST API	Backend handles property data, ML, and user actions
+
+⚙️ 3. Technologies Used
+Frontend:
+ReactJS (or Vanilla JS + HTML/CSS)
+
+Tailwind CSS / Bootstrap
+
+Leaflet / Google Maps API
+
+Backend:
+Flask (Python) or Django
+
+Flask-RESTful for APIs
+
+SQLite (Dev) / PostgreSQL (Prod)
+
+Machine Learning:
+Scikit-learn
+
+Pandas
+
+KNN Recommender / Clustering
+
+Hosting:
+Frontend: Vercel / Netlify
+
+Backend: Render / Railway / Heroku
+
+Database: Supabase / SQLite
+🔒 9. Optional Add-ons
+Feature	Tool/Library
+Login/Auth	Firebase Auth / Flask-JWT
+Payments	Razorpay/Stripe
+Image Hosting	Cloudinary / Firebase
+Maps	Google Maps API
+Chat Support	ChatGPT Plugin / BotPress
+🗂️ 10. Sample Data 
+csv
+Copy
+Edit
+id,title,location,price,bedrooms,bathrooms,image_url
+1,Modern Apartment,Hyderabad,15000,2,1,https://example.com/img1.jpg
+2,Villa with Garden,Bangalore,30000,3,2,https://example.com/img2.jpg
+3,Studio Flat,Chennai,8000,1,1,https://example.com/img3.jpg
+📄 12. README.md Example
+You’ll want this in your GitHub for documentation:
+
+markdown
+Copy
+Edit
+# 🏠 HouseHunt: Find Your Perfect Rental Home
+
+HouseHunt is a smart rental discovery platform that allows users to search, filter, and receive personalized property recommendations.
+
+## 🔧 Features
+- Rental search with filter and map view
+- AI-powered recommendations (KNN)
+- Save favorite homes
+- Responsive frontend (React + Tailwind)
+- RESTful API backend (Flask)
+- Hosted on Render and Vercel
+
+## 🚀 Getting Started
+1. Clone repo and run backend:
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
+Start frontend:
+
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm start
+
+
+
