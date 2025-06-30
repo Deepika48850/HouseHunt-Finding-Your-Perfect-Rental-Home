@@ -1,0 +1,19 @@
+📄  README.md Example
+# 🏠 HouseHunt: Find Your Perfect Rental Home
+
+HouseHunt is a smart rental discovery platform that allows users to search, filter, and receive personalized property recommendations.
+
+## 🔧 Features
+- Rental search with filter and map view
+- AI-powered recommendations (KNN)
+- Save favorite homes
+- Responsive frontend (React + Tailwind)
+- RESTful API backend (Flask)
+- Hosted on Render and Vercel
+
+## 🚀 Getting Started
+1. Clone repo and run backend:
+```bash
+cd backend
+pip install -r requirements.txt
+python app.py
