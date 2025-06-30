@@ -1,0 +1,20 @@
+✅ GitHub Setup Instructions
+A. Initialize Git & Upload
+bash
+Copy
+Edit
+git init
+git add .
+git commit -m "Initial commit - HouseHunt project"
+git branch -M main
+git remote add origin https://github.com/your-username/HouseHunt.git
+git push -u origin main
+B. Add .gitignore
+bash
+Copy
+Edit
+__pycache__/
+node_modules/
+.env
+*.pkl
+*.db
